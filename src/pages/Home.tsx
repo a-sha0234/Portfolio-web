@@ -1,30 +1,35 @@
 import { useState, useEffect, useRef } from "react";
 import ConfettiEffect from "../components/Confetti";
 import { useInView } from "react-intersection-observer";
+import { InView } from "react-intersection-observer/InView";
+import Banner from "../components/Banner";
 
 export default function Home() {
-  const [isElementVisable, setIsElementVisable] = useState<boolean>();
-  // const { ref: myRef, inView: isElementVisable, entry } = useInView(options);
+  // const [isElementVisable, setIsElementVisable] = useState<boolean>();
 
-  const myRef: any = useRef();
+  const { ref: myRef, inView: isElementVisable } = useInView();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setIsElementVisable(entry.isIntersecting);
-      console.log(isElementVisable);
-    });
+  // const myRef: any = useRef();
 
-    observer.observe(myRef.current);
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     const entry = entries[0];
+  //     setIsElementVisable(entry.isIntersecting);
+  //     console.log(isElementVisable);
+  //   });
 
-    console.log(myRef.current);
-  }, [isElementVisable]);
+  //   observer.observe(myRef.current);
+
+  //   console.log(myRef.current);
+  // }, [isElementVisable]);
 
   return (
     <>
       <ConfettiEffect />
       <main>
-        <section ref={myRef}></section>
+        <section ref={myRef}>
+          <Banner />
+        </section>
         <section></section>
       </main>
     </>

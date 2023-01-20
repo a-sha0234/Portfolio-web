@@ -13,7 +13,7 @@ export default function Navbar() {
   }
   return (
     <nav className="navbar">
-      <p className="logo">TickTock</p>
+      <p className="logo"></p>
       <ul className={mobile ? "mobile--links--menu" : "navbar__links"}>
         <Link to="/" className="navbar__links__home">
           <li>Home</li>
