@@ -1,3 +1,14 @@
+import data from "../projects";
+import ProjectCards from "../components/common/ProjectCards";
+
 export default function Projects() {
-  return <div></div>;
+  let projectData = data.map((info: any) => {
+    return (
+      <div>
+        <ProjectCards data={info} />
+      </div>
+    );
+  });
+
+  return <div>{projectData}</div>;
 }
