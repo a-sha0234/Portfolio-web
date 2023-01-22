@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+// css reset
 * {
-  // css reset
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 // mixins for common styles
@@ -21,3 +24,6 @@
 body {
   background-color: black;
 }
+
+//variables
+$fontsize: 3rem;

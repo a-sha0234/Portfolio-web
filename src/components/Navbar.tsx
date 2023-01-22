@@ -15,9 +15,7 @@ export default function Navbar() {
   }
   return (
     <nav className="navbar">
-      <p className="logo">
-        <DiCode />
-      </p>
+      <p className="logo">{/* <DiCode size={60} /> */}</p>
       <ul className={mobile ? "mobile--links--menu" : "navbar__links"}>
         <Link to="/" className="navbar__links__home">
           <li>Home</li>

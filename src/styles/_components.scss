@@ -6,6 +6,10 @@
   background-color: black;
   color: white;
 
+  &__links:hover {
+    color: blue;
+  }
+
   &__links {
     display: flex;
     justify-content: flex-end;
@@ -43,11 +47,12 @@
     position: absolute;
     display: block;
     list-style: none;
-    background-color: black;
+    background-color: #1b1b1b;
     left: 0;
     top: 75px;
     transition: all 0.5s ease-out;
     width: 100%;
+    z-index: 2;
   }
 
   .navbar {
@@ -73,5 +78,137 @@
     outline: none;
     top: 15px;
     right: 25px;
+  }
+}
+
+// banner
+.bannerContainer {
+  color: white;
+  font-size: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  &__buttons :hover {
+    background-color: white;
+    color: black;
+  }
+
+  &__buttons > a {
+    margin: 10px;
+    padding: 15px;
+    min-width: 10%;
+    font-size: 1.2rem;
+    // background-color: white;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid white;
+  }
+}
+
+#name {
+  justify-content: flex-start;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 13%;
+}
+
+#title {
+  display: flex;
+  color: grey;
+  justify-content: flex-end;
+  margin-right: 13%;
+  text-align: center;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+}
+
+#box1 {
+  margin-left: 3%;
+  background-color: red;
+}
+
+#box2 {
+  margin-left: 90%;
+  background-color: purple;
+}
+
+#box3 {
+  margin-left: 95%;
+  background-color: yellow;
+}
+#box4 {
+  margin-left: 1%;
+  background-color: lime;
+}
+
+#box5 {
+  margin-left: 80%;
+  background-color: aqua;
+}
+
+#box6 {
+  margin-left: 20%;
+  background-color: rgb(255, 0, 195);
+}
+
+#box7 {
+  background-color: aliceblue;
+}
+
+.skills {
+  &__grid {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "item1 item2 item3 " "item4 item5 item6" "item7 item8 item9" "item10 item11 item12";
+  }
+
+  &__grid > div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.skills h1 {
+  color: white;
+  font-size: $fontsize;
+  text-align: center;
+  margin: 7%;
+}
+
+.items {
+}
+
+//responsive home page
+@media only screen and (max-width: 700px) {
+  .bannerContainer {
+    font-size: 2.4rem;
+  }
+
+  .skills {
+    &__labels > img {
+      max-height: 100px;
+      max-width: 100px;
+    }
+    // &__grid {
+    //   grid-template-columns: repeat(2, 1fr);
+    //   grid-template-rows: repeat(6, 1fr);
+    //   grid-area: "item1 item2" "item3 item4" "item5 item6" "item7 item8"
+    //     "item9 item10" "item11 item12";
+    // }
   }
 }
