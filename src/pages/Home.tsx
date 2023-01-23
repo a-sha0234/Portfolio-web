@@ -3,7 +3,9 @@ import ConfettiEffect from "../components/Confetti";
 import { useInView } from "react-intersection-observer";
 import Banner from "../components/Banner";
 import Skills from "../components/Skills";
-import { Parallax } from "react-scroll-parallax";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import { Link } from "react-router-dom";
+
 // import images
 
 export default function Home() {
@@ -13,7 +15,7 @@ export default function Home() {
     <>
       <ConfettiEffect />
       <main>
-        <Parallax speed={-15} easing="easeInQuad">
+        <Parallax speed={-15}>
           <div className="box" id="box1"></div>
         </Parallax>
         <Parallax speed={-15} easing="easeInQuad">
@@ -31,6 +33,7 @@ export default function Home() {
           className={isElementVisable ? "animateBanner" : ""}
         >
           <Banner />
+
           <Parallax speed={-10}>
             <div className="box" id="box5"></div>
           </Parallax>
@@ -41,6 +44,7 @@ export default function Home() {
             <div className="box" id="box7"></div>
           </Parallax>
         </section>
+
         <section id="skills">
           <Skills />
         </section>

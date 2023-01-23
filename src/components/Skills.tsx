@@ -1,14 +1,3 @@
-// import css from "../technologies/css.png";
-// import sass from "../technologies/sass.png";
-// import javascript from "../technologies/javascript.png";
-// import typescript from "../technologies/TypeScript.png";
-// import react from "../technologies/Reactsvg.png";
-// import redux from "../technologies/Redux.png";
-// import next from "../technologies/nextjs.png";
-// import node from "../technologies/node.png";
-// import mongodb from "../technologies/mongodb.png";
-// import chartjs from "../technologies/chartjs.png";
-// import html from "../technologies/html.png";
 import { DiReact, DiSass } from "react-icons/di";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { TbBrandCss3, TbBrandNextjs } from "react-icons/tb";
