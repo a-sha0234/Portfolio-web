@@ -2,6 +2,8 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { MdLiveTv } from "react-icons/md";
 import { CgReadme } from "react-icons/cg";
+import TechTags from "./technologyTags";
+import { Parallax } from "react-scroll-parallax";
 
 interface Props {
   data: any;
@@ -10,21 +12,23 @@ interface Props {
 const ProjectsCards: React.FC<Props> = ({ data }) => {
   console.log(data);
 
-  let techImages = data.languageImages.map((path: string) => {
-    return <img src={path} height={100} width={100} />;
+  let techLangauges = data.languagesUsed.map((info: string) => {
+    return <TechTags data={info} />;
   });
 
   return (
     <main className="projectCard">
-      <h1>{data.ProjectName}</h1>
-      <article className="">
+      <article className="projectCard__screenshot">
+        <h1>{data.ProjectName}</h1>
         <img src={data.screenshots} />
       </article>
-      <article>{techImages} </article>
-      <article>
+
+      <article className="projectCard__description">
         <h1>{data.description} </h1>
       </article>
-      <article>
+
+      <article className="projectCard__links">
+        <div>{techLangauges}</div>
         <a href={data.readMeLink}>
           <CgReadme />
         </a>

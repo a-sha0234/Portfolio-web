@@ -4,9 +4,9 @@ import ProjectCards from "../components/common/ProjectCards";
 export default function Projects() {
   let projectData = data.map((info: any) => {
     return (
-      <div>
+      <main className="projectsPage">
         <ProjectCards data={info} />
-      </div>
+      </main>
     );
   });
 

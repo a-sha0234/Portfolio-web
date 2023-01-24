@@ -3,8 +3,7 @@ import ConfettiEffect from "../components/Confetti";
 import { useInView } from "react-intersection-observer";
 import Banner from "../components/Banner";
 import Skills from "../components/Skills";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import { Link } from "react-router-dom";
+import { Parallax } from "react-scroll-parallax";
 
 // import images
 
