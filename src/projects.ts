@@ -17,7 +17,31 @@ import { SiTypescript } from "react-icons/si";
 let data = [
   {
     ProjectName: "CloudSweaper",
-    languagesUsed: ["CSS3, TypeScript, NextJs, HTML"],
+    languagesUsed: [
+      { language: "CSS3", color: "#093145" },
+      { language: "TypeScript", color: "#9A2617" },
+      { language: "NextJs", color: "#C2571A" },
+      { language: "HTML", color: "#FF3F80" },
+    ],
+    languageImages: [projectBackgroundImg],
+    screenshots: [cloudsweaper],
+    description:
+      "A responsive weather based application. Features include: a  ",
+    readMeLink: "https://github.com/a-sha0234/CloudSweaper#readme",
+    Live: "https://cloud-sweaper.vercel.app/",
+    Repo: "https://github.com/a-sha0234/CloudSweaper",
+  },
+  {
+    ProjectName: "CloudSweaper",
+    languagesUsed: [
+      { language: "CSS3", color: "#093145" },
+      { language: "TypeScript", color: "#9A2617" },
+      { language: "NextJs", color: "#C2571A" },
+      { language: "HTML", color: "#FF3F80" },
+      { language: "HTML", color: "#FF3F80" },
+      { language: "HTML", color: "#FF3F80" },
+      { language: "HTML", color: "#FF3F80" },
+    ],
     languageImages: [projectBackgroundImg],
     screenshots: [cloudsweaper],
     description:
@@ -28,7 +52,7 @@ let data = [
   },
   // {
   //   ProjectName: "CloudSweaper",
-  //   languagesUsed: [],
+  //   languagesUsed: ["CSS3, TypeScript, NextJs, HTML"],
   //   languageImages: [projectBackgroundImg],
   //   screenshots: [cloudsweaper],
   //   description:
@@ -39,18 +63,7 @@ let data = [
   // },
   // {
   //   ProjectName: "CloudSweaper",
-  //   languagesUsed: [],
-  //   languageImages: [projectBackgroundImg],
-  //   screenshots: [cloudsweaper],
-  //   description:
-  //     "A responsive weather based application. Features include: a  ",
-  //   readMeLink: "https://github.com/a-sha0234/CloudSweaper#readme",
-  //   Live: "https://cloud-sweaper.vercel.app/",
-  //   Repo: "https://github.com/a-sha0234/CloudSweaper",
-  // },
-  // {
-  //   ProjectName: "CloudSweaper",
-  //   languagesUsed: [],
+  //   languagesUsed: ["CSS3, TypeScript, NextJs, HTML"],
   //   languageImages: [projectBackgroundImg],
   //   screenshots: [cloudsweaper],
   //   description:

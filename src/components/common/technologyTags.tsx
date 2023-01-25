@@ -4,7 +4,11 @@ interface Props {
   data: any;
 }
 const TechTags: React.FC<Props> = ({ data }: any) => {
-  return <div>{data}</div>;
+  return (
+    <p className="techTags" style={{ backgroundColor: data.color }}>
+      {data.language}
+    </p>
+  );
 };
 
 export default TechTags;
