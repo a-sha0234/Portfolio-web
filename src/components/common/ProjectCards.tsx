@@ -24,11 +24,7 @@ const ProjectsCards: React.FC<Props> = ({ data }) => {
 
       <article className="projectCard__description">
         <h1>{data.ProjectName}</h1>
-        <h1>{data.description} </h1>
-      </article>
-
-      <article className="projectCard__links">
-        <div className="tagsContainer">{techLangauges}</div>
+        <p>{data.description} </p>
         <div className="github">
           <a href={data.Live} target="_blank">
             <MdLiveTv color="white" size={50} />
@@ -37,6 +33,18 @@ const ProjectsCards: React.FC<Props> = ({ data }) => {
             <AiFillGithub color="white" size={50} />
           </a>
         </div>
+      </article>
+
+      <article className="projectCard__links">
+        <div className="tagsContainer">{techLangauges}</div>
+        {/* <div className="github">
+          <a href={data.Live} target="_blank">
+            <MdLiveTv color="white" size={50} />
+          </a>
+          <a href={data.Repo} target="_blank">
+            <AiFillGithub color="white" size={50} />
+          </a>
+        </div> */}
       </article>
     </main>
   );
