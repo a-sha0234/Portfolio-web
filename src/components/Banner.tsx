@@ -10,9 +10,12 @@ export default function Banner() {
       </div>
       <article className="buttons">
         {/* <a href="/projects">Projects</a> */}
-        <a href="/projects" id="button__projects">
+        {/* <a href="/projects" id="button__projects"> */}
+        <Link to="/projects" id="button__projects">
+          {" "}
           Projects
-        </a>
+        </Link>
+        {/* </a> */}
 
         <a
           href="https://docs.google.com/document/d/1Scd7oXRZB8bhTdyp_XoLaKTOb8cVaW1NM04H6bnsTlc/edit"
