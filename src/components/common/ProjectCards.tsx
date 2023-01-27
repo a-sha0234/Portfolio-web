@@ -20,9 +20,6 @@ const ProjectsCards: React.FC<Props> = ({ data }) => {
     <main className="projectCard">
       <article className="projectCard__screenshot">
         <img src={data.screenshots} />
-        {/* <Parallax scaleX={[0, 1]}>
-          <div className="line">se</div>
-        </Parallax> */}
       </article>
 
       <article className="projectCard__description">
@@ -31,9 +28,11 @@ const ProjectsCards: React.FC<Props> = ({ data }) => {
           <p style={{ color: "grey" }}>{data.description} </p>
         </div>
         <div className="github">
-          <a href={data.Live} target="_blank">
-            <MdLiveTv color="white" size={40} />
-          </a>
+          {data.Live && (
+            <a href={data.Live} target="_blank">
+              <MdLiveTv color="white" size={40} />
+            </a>
+          )}
           <a href={data.Repo} target="_blank">
             <AiFillGithub color="white" size={40} />
           </a>
@@ -42,14 +41,6 @@ const ProjectsCards: React.FC<Props> = ({ data }) => {
 
       <article className="projectCard__links">
         <div className="tagsContainer">{techLangauges}</div>
-        {/* <div className="github">
-          <a href={data.Live} target="_blank">
-            <MdLiveTv color="white" size={50} />
-          </a>
-          <a href={data.Repo} target="_blank">
-            <AiFillGithub color="white" size={50} />
-          </a>
-        </div> */}
       </article>
       <Parallax scaleX={[0, 1]} opacity={[0, 7]}>
         <div className="line">se</div>
